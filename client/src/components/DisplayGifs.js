@@ -3,13 +3,12 @@ import Gif from './Gif'
 export default function DisplayGifs({ gifs }) {
 
   return (
-  <>
-    <h2>Your search results:</h2>
-    <ul>
+  <div className='display'>
+    <ul className='gifList'>
       {gifs.map((gif) => (
-        <Gif gifId={ gif.id } gifURL={ gif.embed_url } gifAlt={ gif.title } />
+        <Gif key={gif.id} gifURL={ gif.embed_url } gifAlt={ gif.title } />
       ))}
     </ul>
-  </>
+  </div>
   )
 }

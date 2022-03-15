@@ -1,0 +1,51 @@
+.home {
+    max-width: 910px;
+    margin: 0 auto;
+}
+
+.home h1 {
+    text-align: center;
+}
+
+.searchBar {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.searchBar input {
+    display: inline-block;
+    height: 30px;
+    width: 280px; 
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.searchBar button {
+    margin-left: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.display {
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 2px gray;
+}
+
+.gifList {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gif {
+    width: 300px;
+    align-self: center;
+}

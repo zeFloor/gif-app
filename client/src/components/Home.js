@@ -31,7 +31,7 @@ export default function Home() {
     <div className='home'>
       <h1>Humble GIF searcher</h1>
       <div className='searchBar'>
-        <input type="text" value={ inputText } onChange={ e => setInputText(e.target.value) }/>
+        <input type="text" value={ inputText } onChange={ e => setInputText(e.target.value) } placeholder="Search for a GIF" />
         <Button submitInput={ submitInput } input={ inputText } />
       </div>
       <DisplayGifs gifs={ gifs } />
